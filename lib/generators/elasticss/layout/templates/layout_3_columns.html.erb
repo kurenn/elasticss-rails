@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= app_name %></title>
+  <%%= stylesheet_link_tag    "application", :media => "all" %>
+  <%%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div id="content">
+    <div class="unit">
+      <div class="columns on-3">
+        <div class="column">
+          <div class="container">
+            <ul>
+              <li><%%= link_to "Link 1", '#'%></li>
+              <li><%%= link_to "Link 2", '#'%></li>
+              <li><%%= link_to "Link 3", '#'%></li>
+            </ul>
+          </div>
+        </div> <!-- column -->
+        <div class="column">
+          <div class="container">
+            <%%= yield %>
+          </div>
+        </div> <!-- column -->
+        <div class="column">
+          <div class="container">
+            RIGHT CONTENT
+          </div>
+        </div> <!-- column -->
+      </div>
+    </div> <!-- unit -->
+  </div> <!-- content -->
+
+  <!-- Javascripts -->
+
+  <!-- Placed at the end of the document so the pages load faster -->
+  <%%= javascript_include_tag "application" %>
+</body>
+</html>

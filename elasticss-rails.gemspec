@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
   s.name        = "elasticss-rails"
   s.version     = Elasticss::Rails::VERSION
   s.authors     = ["Abraham Kuri"]
-  s.email       = ["abraham.kuri@gmail.com"]
+  s.email       = ["kurenn@icalialabs.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{ElastiCSS integration with rails 3.1 Asset pipeline}
+  s.description = %q{Integrate ElastiCSS framework with the rails assets pipeline}
 
   s.rubyforge_project = "elasticss-rails"
 
@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
+  s.add_dependency 'therubyracer', '0.10.1'
+  s.add_development_dependency 'rails', '>= 3.1'
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
