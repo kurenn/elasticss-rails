@@ -5,9 +5,10 @@ require "elasticss-rails/version"
 Gem::Specification.new do |s|
   s.name        = "elasticss-rails"
   s.version     = Elasticss::Rails::VERSION
+  s.platform    = Gem::Platform::RUBY
   s.authors     = ["Abraham Kuri"]
   s.email       = ["kurenn@icalialabs.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/kurenn/elasticss-rails"
   s.summary     = %q{ElastiCSS integration with rails 3.1 Asset pipeline}
   s.description = %q{Integrate ElastiCSS framework with the rails assets pipeline}
 
