@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    %title <%= app_name %>
+    = stylesheet_link_tag "application", :media => "all"
+    = csrf_meta_tags
+
+  %body
+    .content
+      .unit
+        .columns.on-3
+          .column
+            SIDEBAR
+          .column.span-2
+            = yield
+
+    = javascript_include_tag "application"
+
