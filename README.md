@@ -38,7 +38,18 @@ Usage:
     rails g elasticss:install
 
 
-Layout (generates ElastiCSS layout) - (ERB supported)
+Layout (generates ElastiCSS layout) - (ERB and HAML supported):
+
+You need to first add the haml-rails to the gemfile:
+    
+    gem 'haml-rails'
+
+And last but not least if you want HAML to be your default template engine you
+need to change your config/application.rb file as shown:
+
+    config.generators do |generator|
+      generator.template_engine :haml
+    end
 
 
 Usage:
@@ -61,13 +72,17 @@ But wait there is more:
 
 ## Changelog
 <ul>
+  <li>Current gem v.0.1.0</li>
+  <li>Support for HAML templates</li>
+  <li>Released gem v.0.0.3</li>
+  <li>Released gem v.0.0.2</li>
   <li>Released gem v.0.0.1</li>
 </ul>
 
 
 ## Contributors & Patches & Forks
 <ul>
-  <li>Abraham Kuri Vargas</li>
+  <li>Abraham Kuri Vargas (@kurenn)</li>
 </ul>
 
 ## ElastiCSS author & team
@@ -80,7 +95,7 @@ But wait there is more:
 ## Future
 <ul>
   <li>Writing tests (not implemented yet)</li>
-  <li>Multiple template extensions support - HAML and SLIM</li>
+  <li>Provide a stylesheet for templates</li>
 </ul>
 
 
