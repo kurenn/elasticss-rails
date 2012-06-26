@@ -3,6 +3,7 @@ ElastiCSS is a simple css framework to layout web-based interfaces, based on the
 
 elasticss-rails project integrates ElastiCSS framework for Rails 3.1 Asset Pipeline (Rails 3.2 supported)
 
+[![Build Status](https://secure.travis-ci.org/kurenn/elasticss-rails.png?branch=master)](http://travis-ci.org/kurenn/elasticss-rails)
 
 ## Installing Gem
 
