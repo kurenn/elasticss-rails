@@ -74,7 +74,7 @@ But wait there is more:
   <li>Fernando Trasviña (@azendal)</li>
   <li>Sergio de la Garza (@sgarza)</li>
   <li>Javier Ayala (@javi_ayala)</li>
-<ul>
+</ul>
 
 ## Future
 <ul>
