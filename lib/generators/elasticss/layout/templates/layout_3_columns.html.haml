@@ -1,0 +1,26 @@
+!!! 5
+%html(lang="en")
+  %head
+    %meta(charset='utf-8')
+    %title <%= app_name %>
+    = stylesheet_link_tag "application", :media => "all"
+    = csrf_meta_tags
+  
+  %body
+    .content
+      .unit
+        .columns.on-3
+          .column
+            .container
+              %ul
+                %li= link_to "Link 1", '#'
+                %li= link_to "Link 2", '#'
+                %li= link_to "Link 3", '#'
+          .column
+            .container
+              = yield
+          .column
+            .container
+              RIGHT CONTENT
+    = javascript_include_tag "application"
+
