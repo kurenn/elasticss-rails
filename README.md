@@ -37,6 +37,18 @@ Usage:
 
     rails g elasticss:install
 
+## But you don't have to include the JS always
+
+Thanks to elasticss flexibility, you can skip adding the javascript if
+you are not going to use more than 4 columns, CSS will do it for you:
+
+Usage:
+    
+    rails g elasticss:install --skip-javascript
+
+And you can add it later if you need it with the installation generator
+
+## Layout generators
 
 Layout (generates ElastiCSS layout) - (ERB and HAML supported):
 
@@ -72,7 +84,9 @@ But wait there is more:
 
 ## Changelog
 <ul>
-  <li>Current gem v.0.1.0</li>
+  <li>Current gem v.0.1.1</li>
+  <li>Skip inclusion of JS with an argument</li>
+  <li>Release gem v.0.1.0</li>
   <li>Support for HAML templates</li>
   <li>Released gem v.0.0.3</li>
   <li>Released gem v.0.0.2</li>
@@ -94,6 +108,7 @@ But wait there is more:
 
 ## Future
 <ul>
+  <li>Add dinamic columns layout with argument</li>
   <li>Writing tests (not implemented yet)</li>
   <li>Provide a stylesheet for templates</li>
 </ul>
