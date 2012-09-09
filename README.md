@@ -44,7 +44,7 @@ you are not going to use more than 4 columns, CSS will do it for you:
 
 Usage:
     
-    rails g elasticss:install --skip-javascript
+    rails g elasticss:install --nojs
 
 And you can add it later if you need it with the installation generator
 
@@ -84,7 +84,7 @@ But wait there is more:
 
 ## Changelog
 <ul>
-  <li>Current gem v.0.1.1</li>
+  <li>Current gem v.0.1.3</li>
   <li>Skip inclusion of JS with an argument</li>
   <li>Release gem v.0.1.0</li>
   <li>Support for HAML templates</li>

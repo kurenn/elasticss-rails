@@ -7,10 +7,10 @@ module Elasticss
 
       desc 'This generator installs ElastiCSS to Asset Pipeline'
       
-      argument :skip_javascript, :type => :string, :default => "--with-javascript"
+      class_option :nojs, :type => :boolean, :desc => 'Skips the inclusion of JS'
 
       def add_elasticss
-        directory 'javascripts/elasticss', 'app/assets/javascripts/elasticss' if skip_javascript != "--skip-javascript"
+        directory 'javascripts/elasticss', 'app/assets/javascripts/elasticss' unless options[:nojs]
         directory 'stylesheets/elasticss', 'app/assets/stylesheets/elasticss'
       end
     end
