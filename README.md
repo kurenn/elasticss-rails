@@ -28,11 +28,11 @@ Install the gem using the bundle command:
 
 Add to your `app/assets/stylesheets/application.css`
 
-		=* require elastic
+		*= require elastic
 
 If you need to add the print support you can add it as well
 		
-		=* require elastic.print
+		*= require elastic.print
 
 ## Add elasticss JS assets
 
