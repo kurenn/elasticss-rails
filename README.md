@@ -19,34 +19,26 @@ or you can install from latest build;
 gem 'elasticss-rails', :git => 'git@github.com:kurenn/elasticss-rails.git'
 ```
 
-You can run bundle from command line
+Install the gem using the bundle command:
 
     bundle install
 
 
-## Installing to App (using Generators)
+## Add elasticss CSS assets
 
-You can run following generators to get started with ElastiCSS quickly.
+Add to your `app/assets/stylesheets/application.css`
 
+		=* require elastic
 
-Install (requires directives to Asset pipeline.)
+If you need to add the print support you can add it as well
+		
+		=* require elastic.print
 
+## Add elasticss JS assets
 
-Usage:
+Add to your `app/assets/javascripts/application.js`
 
-
-    rails g elasticss:install
-
-## But you don't have to include the JS always
-
-Thanks to elasticss flexibility, you can skip adding the javascript if
-you are not going to use more than 4 columns, CSS will do it for you:
-
-Usage:
-    
-    rails g elasticss:install --nojs
-
-And you can add it later if you need it with the installation generator
+		//= require elastic
 
 ## Layout generators
 
@@ -84,7 +76,8 @@ But wait there is more:
 
 ## Changelog
 <ul>
-  <li>Current gem v.0.1.3</li>
+  <li>Current gem v.0.1.4</li>
+	<li>Full integration with rails asset pipeline</li>
   <li>Skip inclusion of JS with an argument</li>
   <li>Release gem v.0.1.0</li>
   <li>Support for HAML templates</li>
