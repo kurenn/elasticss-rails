@@ -1,5 +1,5 @@
 # ElastiCSS for Rails 3.1 Asset Pipeline
-ElastiCSS is a simple css framework to layout web-based interfaces, based on the printed layout techniques of 4 columns but with capabilities to unlimited column combinations. and capacity to make elastic, fixed and liquid layout easily 
+ElastiCSS is a simple css framework to layout web-based interfaces, based on the printed layout techniques of 4 columns but with capabilities to unlimited column combinations. and capacity to make elastic, fixed and liquid layout easily
 
 elasticss-rails project integrates ElastiCSS framework for Rails 3.1 Asset Pipeline (Rails 3.2 supported)
 
@@ -23,15 +23,23 @@ Install the gem using the bundle command:
 
     bundle install
 
+## To add the elasticss CSS and JS assets
+
+You can run the generator command
+
+	rails g elasticss:install
+
+Or you can add them **manually**:
 
 ## Add elasticss CSS assets
 
+
 Add to your `app/assets/stylesheets/application.css`
 
-		*= require elastic
+			*= require elastic
 
 If you need to add the print support you can add it as well
-		
+
 		*= require elastic.print
 
 ## Add elasticss JS assets
@@ -45,7 +53,7 @@ Add to your `app/assets/javascripts/application.js`
 Layout (generates ElastiCSS layout) - (ERB and HAML supported):
 
 You need to first add the haml-rails to the gemfile:
-    
+
     gem 'haml-rails'
 
 And last but not least if you want HAML to be your default template engine you
@@ -75,36 +83,31 @@ But wait there is more:
 
 
 ## Changelog
-<ul>
-  <li>Current gem v.0.1.4</li>
-	<li>Full integration with rails asset pipeline</li>
-  <li>Skip inclusion of JS with an argument</li>
-  <li>Release gem v.0.1.0</li>
-  <li>Support for HAML templates</li>
-  <li>Released gem v.0.0.3</li>
-  <li>Released gem v.0.0.2</li>
-  <li>Released gem v.0.0.1</li>
-</ul>
+  - Added a install generator (v0.1.5)
+  - Current gem v.0.1.4
+  - Full integration with rails asset pipeline
+  - Skip inclusion of JS with an argument
+  - Release gem v.0.1.0
+  - Support for HAML templates
+  - Released gem v.0.0.3
+  - Released gem v.0.0.2
+  - Released gem v.0.0.1
 
 
 ## Contributors & Patches & Forks
-<ul>
-  <li>Abraham Kuri Vargas (@kurenn)</li>
-</ul>
+
+  - Abraham Kuri Vargas ([@kurenn](http://twitter.com/kurenn))
+  - Ricardo Cruz ([@rkrdo89](http://twitter.com/rkrdo89))
 
 ## ElastiCSS author & team
-<ul>
-  <li>Fernando Trasviña (@azendal)</li>
-  <li>Sergio de la Garza (@sgarza)</li>
-  <li>Javier Ayala (@javi_ayala)</li>
-</ul>
+  - Fernando Trasviña ([@azendal](http://twitter.com/azendal))
+  - Sergio de la Garza ([@sgarza](http://twitter.com/azendal))
+  - Javier Ayala ([@javi_ayala](http://twitter.com/javi_ayala))
 
 ## Future
-<ul>
-  <li>Add dinamic columns layout with argument</li>
-  <li>Writing tests (not implemented yet)</li>
-  <li>Provide a stylesheet for templates</li>
-</ul>
+  - Add dinamic columns layout with argument
+  - Writing tests (not implemented yet)
+  - Provide a stylesheet for templates
 
 
 ## Credits
